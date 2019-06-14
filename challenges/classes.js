@@ -69,3 +69,5 @@ console.log(cube.cubeVolume());
 console.log(cube.cubeSurfaceArea());
 console.log(cube2.cubeVolume());
 console.log(cube2.cubeSurfaceArea());
+console.log(cube2.volume());            //Question in sli.do was correct,
+console.log(cube2.surfaceArea());       //cube is special case of cuboid so cuboid equations work just as well
