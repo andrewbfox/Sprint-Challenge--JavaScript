@@ -89,9 +89,15 @@ console.log(contactInfo);
 
 
 /* Request 3: Find out how many universities have the string "Uni" included in their name. Create a new array called uni that contains them all. Log the result. */
-const uni = [];
-console.log(uni);
+/*const uniNum = graduates.reduce(())
 
+const uni = graduates.filter((contUni) => {
+  if (contUni.university.includes("Uni")) {
+    return contUni.university;
+  };
+});
+console.log(uni);
+*/
 
 // ==== ADVANCED Array Methods ====
 
@@ -114,7 +120,11 @@ zooAnimals = [{"animal_name":"Jackal, asiatic","population":5,"scientific_name":
 The zoo wants to display both the scientific name and the animal name in front of the habitats.  Return an array with only the animal and scientific names in it.  The individual values in the array should look like this "Name: Jackal, asiatic, Scientific: Canis aureus."
 
 */
-const animalNames = [];
+
+const animalNames = zooAnimals.forEach(cb);
+function cb(element) {
+  return `Name: ${element.animal_name}, Scientific: ${element.scientific_name}.`
+};
 console.log(animalNames);
 
 /* Request 2: .map()    
@@ -123,7 +133,9 @@ The zoos need a list of all their animal's names (names only, not scientific) co
 
 */
 
-const lowerCase = [];
+const lowerCase = zooAnimals.map((item) => {
+  return item.animal_name.toLowerCase();
+});
 console.log(lowerCase); 
 
 /* Request 3: .filter() 
