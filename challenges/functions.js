@@ -25,7 +25,7 @@
 
 // Explain in your own words why `nestedfunction()` can access the variable `internal`.
 
-// Explanation: 
+// Explanation: nestedFunction can access the variable 'internal' because it is declared outside of nestedFunction. nestedFunction can look outside itself for its context.
 
 
 const external = "I'm outside the function";
